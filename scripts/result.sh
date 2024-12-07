@@ -30,7 +30,7 @@ sudo alp ltsv --file=${NGINX_ACCESS_LOG} --nosave-pos --pos /tmp/alp.pos --sort 
 echo "Nginxのログフォーマット完了"
 
 # mysql
-sudo mysqldumpslow -s t /var/log/mysql/mysql-slow.log > ${APP_HOME}/measure/mysql/mysql-slow.log
+sudo mysqldumpslow -s t ${MYSQL_SLOW_LOG} > ${APP_HOME}/measure/mysql/mysql-slow.log
 echo "Mysqlのスロークエリ出力完了"
 
 # ruby
