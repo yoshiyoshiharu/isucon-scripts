@@ -8,8 +8,6 @@ MYSQL_SLOW_LOG="/var/log/mysql/mysql-slow.log"
 NGINX_ACCESS_LOG="/var/log/nginx/access.log"
 APP_PROF="$GIT_REPOSITORY_DIR/ruby/tmp"
 
-git pull
-
 cp -r ${GIT_REPOSITORY_DIR}/etc/nginx/* /etc/nginx
 cp -r ${GIT_REPOSITORY_DIR}/etc/mysql/* /etc/mysql
 
